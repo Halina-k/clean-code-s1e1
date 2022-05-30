@@ -20,17 +20,10 @@
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-  .todo-list__header {
-    text-align: center;
-  }
-}
-
 .task-box__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,25 +47,17 @@
   display: inline-block;
   flex-grow: 1
 }
-/* 
-.new-task-list__item {
-  display: flex;
-} */
 
 .task-box__list {
   margin: 0;
   padding: 0px;
 }
 
-/* li,
-h3, */
 .task-box__item,
 .task-box__title {
   list-style: none;
 }
 
-/* input,
-button, */
 .task-box__btn,
 .task-box__text {
   outline: none;
@@ -92,9 +77,6 @@ button, */
   color: #3a3A3a;
 }
 
-/* Heading */
-/* h3,
-label[for="new-task"], */
 .task-box__title {
   color: #333;
   font-weight: 700;
@@ -120,34 +102,15 @@ label[for="new-task"], */
   display: none;
 }
 
-
 .task-box__text:focus {
   color: #333;
 }
-/* 
-.task-box__item > .task-box__text {
-  width: 226px
-} */
-
-/* .task-box__text {
-  width: 226px
-} */
 
 .add-task__task {
   width: 318px;
 }
 
-/* .task-box__item .task-box__text {
-  display:none
-} */
-
-
 /* New Task */
-
-/* label[for="new-task"] {
-  display: block;
-  margin: 0 0 20px;
-} */
 
 .new-task-list__item {
   border-bottom: none;
@@ -158,13 +121,8 @@ label[for="new-task"], */
   width:318px
 }
 
-/* .new-task__task */
-
 /* Task list */
-/* li, */
 
-
-/* li>*, */
 .task-box__input-checkbox,
 .task-box__label,
 .task-box__text,
@@ -175,13 +133,6 @@ label[for="new-task"], */
 .task-box__input-checkbox {
   margin: 0 10px;
 }
-
-
-
-
-/* li >    input[type="text"] {
-  width: 226px
-} */
 
 .task-box__img-btn {
   height: 2em;
@@ -194,27 +145,27 @@ label[for="new-task"], */
 }
 
 /* Completed */
+
 .task-box__completed-list .task-box__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-/* ul li input[type=text] {
-  display:none
-} */
-
 
 .task-box__item_edit .task-box__text {
   display:inline-block;
   width:224px
 }
-/* 
-ul li.editMode input[type=text] {
-  display:inline-block;
-  width:224px
-} */
 
 .task-box__item_edit .task-box__label {
   display: none;
+}
+
+@media (max-width:768px) {
+
+  .todo-list__header {
+    text-align: center;
+  }
+
 }
