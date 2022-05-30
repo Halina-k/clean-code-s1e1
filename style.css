@@ -45,7 +45,7 @@
 .task-box__task-line {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .task-box__list {
@@ -117,8 +117,8 @@
 }
 
 .new-task-list__input {
-  display:inline-block;
-  width:318px
+  display: inline-block;
+  width: 318px;
 }
 
 /* Task list */
@@ -154,8 +154,8 @@
 /* Edit Task */
 
 .task-box__item_edit .task-box__text {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px;
 }
 
 .task-box__item_edit .task-box__label {
