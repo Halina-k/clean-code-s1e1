@@ -11,23 +11,24 @@
 
 <body class="todo-list">
   <div class="todo-list__header header">
-    <img class="header__image" src="./eisenhower-matrix.jpg">
+    <img class="header__img" src="./eisenhower-matrix.jpg">
     <a class="header__info-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </div>
 
   <div class="todo-list__task-box task-box">
-    <p id="task-box__add-task add-task">
-      <label for="new-task">Add Item</label>
-    </p>
-      <div class="add-task__wrapper">
-        <input id="new-task" class="task-box__text task-box__task-line add-task__task" type="text">
-        <button class="task-box__btn task-box__add-btn">Add</button>
-      </div>
-
+    <section class="task-box__add-task add-task">
+      <h3 class="task-box__title">Add Item</h3>
+      <ul class="task-box__list task-box__new-task-list">
+        <li class="task-box__item new-task-list__item">
+          <input id="new-task-list__input" class="task-box__text task-box__task-line new-task-list__input" type="text">
+          <button class="task-box__btn task-box__add-btn">Add</button>
+        </li>
+      </ul>
+    </section>
     
     <section class="task-box__incomplete-task incomplete-task">
     <h3 class="task-box__title">Todo</h3>
-    <ul id="incomplete-task__list" class="task-box__list">
+    <ul class="task-box__list task-box__incomplete-list">
       <li class="task-box__item">
         <input class="task-box__input-checkbox" type="checkbox">
         <label class="task-box__label task-box__task-line">Pay Bills</label>
@@ -49,19 +50,20 @@
     </ul>
     </section>
 
-    <h3 class="task-box__title">Completed</h3>
-
-    <ul class="task-box__list task-box__completed-list">
-      <li class="task-box__item">
-        <input class="task-box__input-checkbox" type="checkbox" checked>
-        <label class="task-box__label task-box__task-line">See the Doctor</label>
-        <input type="text" class="task-box__text task-box__task-line">
-        <button class="task-box__btn task-box__edit-btn">Edit</button>
-        <button class="task-box__btn task-box__delete-btn">
-          <img class="task-box__img-btn" src="./remove.svg">
-        </button>
-      </li>
-    </ul>
+    <section class="task-box__completed-task completed-task">
+      <h3 class="task-box__title">Completed</h3>
+      <ul class="task-box__list task-box__completed-list">
+        <li class="task-box__item">
+          <input class="task-box__input-checkbox" type="checkbox" checked>
+          <label class="task-box__label task-box__task-line">See the Doctor</label>
+          <input type="text" class="task-box__text task-box__task-line">
+          <button class="task-box__btn task-box__edit-btn">Edit</button>
+          <button class="task-box__btn task-box__delete-btn">
+            <img class="task-box__img-btn" src="./remove.svg">
+          </button>
+        </li>
+      </ul>
+    </section>
   </div>
 
   <script src="app.js"></script>
